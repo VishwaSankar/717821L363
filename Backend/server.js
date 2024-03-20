@@ -1,12 +1,14 @@
 const express = require('express');
-const cors = require('cors');
+
 const gamingProducts = require('./gameprodserver');
 const app = express();
 const PORT = 4000;
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+
 
 
 app.get('/api/gaming-products', (req, res) => {
