@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import SportsEsportsSharpIcon from '@mui/icons-material/SportsEsportsSharp';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import StorefrontIcon from '@mui/icons-material/Storefront';
@@ -39,7 +40,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <StorefrontIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} />
+          <SportsEsportsSharpIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }} />
           <Typography
             variant="h6"
             noWrap
@@ -56,7 +57,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            E-Commerce
+            Gaming Store
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
